@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="bbsshOnlineHelpPU" transaction-type="RESOURCE_LOCAL">
+    <provider>oracle.toplink.essentials.PersistenceProvider</provider>
+	<!-- non-jta-data-source>java:comp/env/jdbc/bbssh</non-jta-data-source -->
+	  <class>org.bbssh.onlinehelp.model.HelpTopic</class>
+	  <class>org.bbssh.onlinehelp.model.HelpTopicDetail</class>
+
+    <properties>
+      <property name="toplink.jdbc.user" value="your-username"/>
+      <property name="toplink.jdbc.password" value="your-password"/>
+      <property name="toplink.jdbc.url" value="jdbc:mysql://localhost/bbssh"/>
+      <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+<!--	  property name="toplink.session.customizer" value="org.bbssh.onlinehelp.da.ToplinkSessionCustomizer"
+-->
+
+    </properties>
+  </persistence-unit>
+</persistence>

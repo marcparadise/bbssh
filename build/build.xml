@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Ant build file for the BBSSH application
+ -->
+<project name="BBSSH" default="deploy" basedir=".">
+    <!-- Task definitions -->
+    <typedef resource="org/tigris/subversion/svnant/svnantlib.xml">
+        <classpath>
+            <pathelement location="lib/svnjavahl.jar"/>
+            <pathelement location="lib/svnant.jar"/>
+            <pathelement location="lib/svnClientAdapter.jar"/>
+        </classpath>
+    </typedef>
+    <!-- Start with the last written build number -->
+    <property file="build.num" />
+    <target name="dist" depends="deploy">
+        <property file="sig.password"/>
+        <svn username="${svn.username}" password="${svn.password}" javahl="false" svnkit="false">
+            <copy srcUrl="http://svn.bbssh.org/trunk/" destUrl="http://svn.bbssh.org/tags/b${build.number}" message="Automated build tag for build ${build.number}" />
+        </svn>
+
+    </target>
+
+    <target name="deploy">
+        <echo message="Building platform 7.0.0" />
+        <ant antfile="build-impl.xml" target="dist">
+            <property name="platform" value="7.0.0" />
+            <property file="sig.password"/>
+            <property file="build.properties"/>
+        </ant>
+        <!--
+        <echo message="Building platform 6.0.0" />
+        <ant antfile="build-impl.xml" target="dist">
+            <property name="platform" value="6.0.0" />
+            <property file="sig.password"/>
+            <property file="build.properties"/>
+        </ant>
+        <echo message="Building platform 5.0.0" />
+        <ant antfile="build-impl.xml" target="dist">
+            <property name="platform" value="5.0.0" />
+            <property file="sig.password"/>
+            <property file="build.properties"/>
+        </ant>
+        <echo message="Building platform 4.7.0" />
+        <ant antfile="build-impl.xml" target="dist">
+            <property name="platform" value="4.7.0" />
+            <property file="sig.password"/>
+            <property file="build.properties"/>
+        </ant>
+        <echo message="Building platform 4.6.0" />
+        <ant antfile="build-impl.xml" target="dist">
+            <property name="platform" value="4.6.0" />
+            <property file="sig.password"/>
+            <property file="build.properties"/>
+        </ant>
+        <echo message="Building platform 4.5.0" />
+        <ant antfile="build-impl.xml" target="dist">
+            <property name="platform" value="4.5.0" />
+            <property file="sig.password"/>
+            <property file="build.properties"/>
+        </ant>
+-->
+        <!-- Updating version.txt etc is only done if we succesfully buid...  -->
+        <ant antfile="build-impl.xml" target="write-version">
+            <property name="platform" value="0.0.0" />
+            <property file="sig.password"/>
+            <property file="build.properties"/>
+        </ant>
+        <!-- Only if we sucessfully completed all builds do we tag this build. Thsi wo't override our
+         tag number, which will match the build number  -->
+        <buildnumber file="build.num"/>
+
+
+    </target>
+</project>
+

@@ -1,0 +1,690 @@
+ABOUT_MENU_CHECK_UPDATES_NOW#0="Check for BBSSH Updates";
+ABOUT_MENU_DONATE#0="Donate to the BBSSH Project";
+ABOUT_MSG_NO_UPDATES#0="You are running the latest available version of BBSSH.";
+APPLICATION_DESCRIPTION#0="An SSH and Telnet client for Blackberry devices.";
+APPLICATION_TITLE#0="BBSSH";
+BIND_CATEGORY_KEYBOARD#0="Keyboard";
+BIND_CATEGORY_MEDIA#0="Media Keys";
+BIND_CATEGORY_NAV#0="Trackpad/Navigation";
+BIND_CATEGORY_PHONE#0="Phone Keys";
+BIND_CATEGORY_TOUCH_CLICK#0="Touch - Click Events";
+BIND_CATEGORY_TOUCH_DOUBLE_CLICK#0="Touch - Double Click";
+BIND_CATEGORY_TOUCH_DOUBLE_TAP#0="Touch - Double Tap";
+BIND_CATEGORY_TOUCH_HOVER#0="Touch - Hover";
+BIND_CATEGORY_TOUCH_OTHER#0="Touch - Gestures";
+BIND_CATEGORY_TOUCH_TAP#0="Touch - Tap";
+CMD_DESC_CHANGE_INPUT_MODE#0="Change between Hybrid, Direct Input, and Scrolling modes.";
+CMD_DESC_COPY_TEXT#0="Copy the current visible buffer to the system clipboard.";
+CMD_DESC_DIRECTIONAL_KEY#0="Send the specified arrow key to the terminal.  This key is combined with the currently active CTRL or ALT modifier.";
+CMD_DESC_DISCONNECT#0="Immediately terminate the current session.";
+CMD_DESC_INCDEC_FONT_SIZE#0="Increases or decreases the font size of the current session by one unit.";
+CMD_DESC_LIST_SESSIONS#0="Presents a list of active sessions. If no other sessions are active, a message is displayed. ";
+CMD_DESC_NONE#0="Selecting this command unassigns the selected action.  Alternatively you could choose the menu option \"Clear shortcut\" on the view/edit shortcut screen.";
+CMD_DESC_PASTE_TEXT#0="Pastes system clipboard contents into the currently active terminal session. ";
+CMD_DESC_POP_TERMINAL_SCREEN#0="Returns you to the main BBSSH screen (the connection list). It does not close or end the current session.";
+CMD_DESC_RECONNECT#0="If you've been disconnected, this command will allow you to reconnect the current session. ";
+CMD_DESC_REFRESH_SCREEN#0="Use this if there are artifiacts or other issues to force a terminal screen refresh. ";
+CMD_DESC_RUN_MACRO#0="Runs the specified macro.";
+CMD_DESC_SCROLL_DOWN_LINES#0="If you have scrollback buffer enabled, this will scroll the buffer down the specified number of lines. Use  0 for one page.";
+CMD_DESC_SCROLL_UP_LINES#0="If you have scrollback buffer enabled, this will scroll the buffer up the specified number of lines. Use 0 for one page.";
+CMD_DESC_SEND_KEYS#0="Send text to the terminal.  You can use this to send multiple lines of text (press Enter); or just a single character. Note that if the CTRL or ALT key state is toggled on, the first character will be sent with CTRL/ALT (or both) ; then the CTRL/ALT toggle will be set to 'off'. ";
+CMD_DESC_SEND_TERMINAL_KEY#0="Send a single special terminal key such as INSERT or a function key to the remote terminal. This key will be combined with any active CTRL or ALT modifiers upon sending.";
+CMD_DESC_SET_FONT_SIZE#0="Sets the terminal font to the selected point size.  Note that some fonts appear better than others in the smaller sizes - it will take some experimentation to determine which you like best. ";
+CMD_DESC_SHOW_DEBUG_MESSAGE#0="Shows a messagebox with the provided text for .75 seconds. Intended to assist in debugging command mappings. ";
+CMD_DESC_SHOW_HIDE_KEYBOARD#0="Hides the virtual keyboard if it is visible; displays it if it is hidden. This is only avaiable on touchscreen devices. ";
+CMD_DESC_SHOW_KEYBINDING_SCREEN#0="Allows you to view and customize shortcut configuration to suit your tastes. For example this will allow you to change which key sends \"CTRL\". ";
+CMD_DESC_SHOW_MACRO_SCREEN#0="Displays the list of macros and allows you to choose one for execution.  You may also edit, delete, or create macros from the list location. ";
+CMD_DESC_SHOW_OVERLAY_COMMANDS#0="Show the Toolbar on-screen. The Toolbar gives you quick access to most common commands such as macros, font changes, and others.  If the Toolbar is already visible, this will hide it.";
+CMD_DESC_SHOW_OVERLAY_INPUT#0="Show the input overlay on-screen; if it is already shown, this will hide it.  The input overlay allows you to type text on your BlackBerry device and send it only when you're done -- this uses less network traffic and is better for battery life.";
+CMD_DESC_SHOW_SESSION_DETAIL#0="View the connection details for the active session.  This is primarily intended as a debugging aid. ";
+CMD_DESC_SHOW_SET_FONT_SCREEN#0="Displays a screen that allows you to change the font face and size for the active session. ";
+CMD_DESC_SHOW_SPECIAL_KEYS_SCREEN#0="Displays a panel of special keys such as Home, Insert, and End.  The key you choose gets sent to the remote session.  Note that in all cases, you can also attach special keys directly to BlackBerry hard keys and touch screen gestures.";
+CMD_DESC_SHOW_SYMBOL_MENU#0="Show the standard symbol menu and selection into the active terminal session.";
+CMD_DESC_SHOW_URL_SCREEN#0="Displays any URLs, phone numbers, email addresses, or BB PINs on the current  screen and allow you to use them or copy them to clipboard. ";
+CMD_DESC_TAKE_SCREENSHOT#0="Captures the current screen and save it to device or SD storage.";
+CMD_DESC_TOGGLE_ALT#0="This toggles the ALT key on or off. When the ALT key is on, the next normal keystroke you type will be sent as if you were  holding down the ALT key.";
+CMD_DESC_TOGGLE_CTRL#0="This toggles the CTRL key on or off. When the CTRL key is on, the next normal keystroke you type will be sent as if you were  holding down the CTRL key.";
+CMD_DESC_TOGGLE_LOCAL_ALT#0="Available only for touchscreens and reduced keyboard layouts, this command will simulate a local ALT key press for use in shortcuts.";
+CMD_DESC_TOGGLE_LOCAL_LSHIFT#0="Available only for touchscreens and reduced keyboard layouts, this command will simulate a local Left Shift key press for use in shortcuts.";
+CMD_DESC_TOGGLE_LOCAL_RSHIFT#0="Available only for touchscreens and reduced keyboard layouts, this command will simulatre a local Right Shift key press for use in shortcuts. ";
+CMD_DESC_TOGGLE_ORIENTATION_LOCK#0="Available only for touchscreens, this command will lock the display orientation into place.  Run it a second time to unlock the orientation. ";
+CMD_DESC_WAIT#0="This pauses macro execution for the specified number of milliseconds.  This could be useful when waiting for a remote task to finish before starting the next command.";
+CMD_DESC_WAIT_ACTIVITY#0="This pauses macro execution until additional data traffic is received for the session. The wait will be delayed the specified number of milliseconds (0 for no delay). Once data is received on the connection, execution resumes. ";
+CMD_NAME_CHANGE_INPUT_MODE#0="Change Input Mode";
+CMD_NAME_COPY_TEXT#0="Copy";
+CMD_NAME_DIRECTIONAL_KEY#0="Send Movement";
+CMD_NAME_DISCONNECT#0="Disconnect";
+CMD_NAME_INCDEC_FONT_SIZE#0="Change Font Size";
+CMD_NAME_LIST_SESSIONS#0="Switch Active Sessions";
+CMD_NAME_NONE#0=" - None - ";
+CMD_NAME_PASTE_TEXT#0="Paste";
+CMD_NAME_POP_TERMINAL_SCREEN#0="Show Connection List";
+CMD_NAME_RECONNECT#0="Reconnect";
+CMD_NAME_REFRESH_SCREEN#0="Refresh Screen";
+CMD_NAME_RUN_MACRO#0="Run Macro";
+CMD_NAME_SCROLL_DOWN_LINES#0="Scroll Down";
+CMD_NAME_SCROLL_UP_LINES#0="Scroll Up";
+CMD_NAME_SEND_KEYS#0="Send Text";
+CMD_NAME_SEND_TERMINAL_KEY#0="Send Key";
+CMD_NAME_SET_FONT_SIZE#0="Font Size: Set";
+CMD_NAME_SHOW_DEBUG_MESSAGE#0="Show Status Message";
+CMD_NAME_SHOW_HIDE_KEYBOARD#0="Toggle Virtual Keyboard";
+CMD_NAME_SHOW_KEYBINDING_SCREEN#0="View/Edit Shortcuts";
+CMD_NAME_SHOW_MACRO_SCREEN#0="Manage Macros";
+CMD_NAME_SHOW_OVERLAY_COMMANDS#0="Show Toolbar";
+CMD_NAME_SHOW_OVERLAY_INPUT#0="Show Input Overlay";
+CMD_NAME_SHOW_SESSION_DETAIL#0="Show Session Diagnostics";
+CMD_NAME_SHOW_SET_FONT_SCREEN#0="Set Font";
+CMD_NAME_SHOW_SPECIAL_KEYS_SCREEN#0="Show Extended Keys";
+CMD_NAME_SHOW_SYMBOL_MENU#0="Show Symbols";
+CMD_NAME_SHOW_URL_SCREEN#0="URL Grabber+ ";
+CMD_NAME_TAKE_SCREENSHOT#0="Capture Screen";
+CMD_NAME_TOGGLE_ALT#0="Toggle ALT";
+CMD_NAME_TOGGLE_CTRL#0="Toggle CTRL";
+CMD_NAME_TOGGLE_LOCAL_ALT#0="Toggle Local Alt";
+CMD_NAME_TOGGLE_LOCAL_LSHIFT#0="Toggle Local Left Shift";
+CMD_NAME_TOGGLE_LOCAL_RSHIFT#0="Toggle Local Right Shift";
+CMD_NAME_TOGGLE_ORIENTATION_LOCK#0="Toggle Orientation Lock";
+CMD_NAME_WAIT#0="Wait";
+CMD_NAME_WAIT_ACTIVITIY#0="Wait for Activity";
+CONNECTION_STATE_LIST#0={
+    "Disconnected",
+    "Connecting",
+    "Initiating Key Exchange",
+    "Negotiating Authentication",
+    "Authenticating",
+    "Connected",
+    "Disconnecting",
+    "Error",
+};
+ERROR_NETWORK_PERM_MISSING#0="BBSSH does not have permissions to use this networking type.  To update permissions, go to Settings from the main screen, then choose Update Permissions.";
+FILE_SELECTION_LBL_SAVE_AS#0="Save As: ";
+FILE_SELECTION_LBL_USE_THIS_FOLDER#0="Use this folder.";
+FILE_SELECTION_MSG_INVALID_DIR#0="This is not a valid folder for this operation.";
+FILE_SELECTION_MSG_INVALID_FILE#0="Please provide a valid file name.";
+FILE_SELECTION_MSG_NO_FILE#0="Please provide the \"save-as\" file name.";
+FILE_SELECTION_MSG_OPEN_FAILED#0="Unable to open folder.  ";
+FILE_SELECTION_TITLE_FOLDER#0="Select the folder to continue.";
+FILE_SELECTION_TITLE_OPEN#0="Please choose a file:";
+FILE_SELECTION_TITLE_SAVE#0="Choose location and filename:";
+GENERAL_LBL_CANCEL#0="Cancel";
+GENERAL_LBL_LOCATION#0="Location:";
+GENERAL_LBL_NO#0="No";
+GENERAL_LBL_OK#0="OK";
+GENERAL_LBL_SUBMIT#0="Submit";
+GENERAL_LBL_YES#0="Yes";
+GENERAL_NOT_APPLICABLE#0="N/A";
+GEN_LBL_CLICK_TO_CHOOSE#0="Click to choose...";
+GEN_LBL_DISCONNECTED#0="Disconnected";
+GEN_LBL_HELP#0="Help";
+GEN_LBL_INVALID#0="Invalid";
+GEN_LBL_NEXT#0="Next";
+GEN_LBL_NONE#0="None";
+GEN_LBL_NOTICE#0="Notice";
+GEN_LBL_PATH#0="Path:";
+GEN_LBL_PREV#0="Previous";
+HELP_ABOUT_LBL_ABOUT_1#0="BBSSH is an SSH and Telnet client for BlackBerry devices running OS 4.5 and later.  It is designed to take advantage of the unique capabilities of the BlackBerry platform.  BBSSH is licensed under the GPLv2 license,   Visit the project home page at http://bbssh.org/.";
+HELP_ABOUT_LBL_ABOUT_2#0="BBSSH is developed and maintained by Marc Paradise. BBSSH is a ported and rewritten version of the original MidpSSH by Karl von Randow. ";
+HELP_ABOUT_LBL_FEATURES#0="BBSSH has many features, including:";
+HELP_ABOUT_LBL_FOR_HIRE#0="Do you wish to offer your users an integrated BlackBerry experience on par with the one that BBSSH provides? Consider Noetisys -- BlackBerry development services, provided by the developer of BBSSH.";
+HELP_ABOUT_LBL_LICENSE#0="BBSSH is licensed under the GNU GPL v2 license. Full source code and latest releases can be obtained at http:/bbssh.org/.  A complete copy of the GPLv2 license -- including your rights and limitations under it -- can be found here: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html.  ";
+HELP_ABOUT_LBL_PROJECTS_0#0="MidpSSH: ";
+HELP_ABOUT_LBL_PROJECTS_1#0="Ganymed SSH2: ";
+HELP_ABOUT_LBL_PROJECTS_2#0="regexp-me: ";
+HELP_ABOUT_LBL_SUPPORT_0#0="News and Information:  ";
+HELP_ABOUT_LBL_SUPPORT_1#0="Issue Tracker:  ";
+HELP_ABOUT_LBL_SUPPORT_2#0="Community Support:  ";
+HELP_ABOUT_LBL_SUPPORT_3#0="Commerical Support:  ";
+HELP_ABOUT_LST_FEATURES#0={
+    " * Multiple concurrent connections",
+    " * Customizable hotkey assignment for most device keys and touch screen events",
+    " * Import your key-pairs for authentication ",
+    " * Supports Telnet and SSH v2",
+    " * Small footprint and low battery usage",
+    " * Uses native BlackBerry encryption for best performance.",
+    " * Integrates with your notifications and alert profile settings (4.6+ only)",
+    " * Capture and launch URLs, phone numbers, and email information from within a session.",
+    " * Touchscreen devices support switching between Portrait and Landscape modes",
+    " * Wide range of font options. ",
+    " * Developed by someone who uses it on a daily basis.",
+};
+HELP_ABOUT_TITLE_FEATURES#0="Features";
+HELP_ABOUT_TITLE_FOR_HIRE#0="BlackBerry Consulting Services";
+HELP_ABOUT_TITLE_PROJECTS#0="Projects";
+HELP_ABOUT_TITLE_SUPPORT#0="Support";
+HELP_ABOUT_URL_NOETISYS#0="http://www.noetisys.com/";
+HELP_ABOUT_URL_PROJECTS_0#0="http://xk72.com/";
+HELP_ABOUT_URL_PROJECTS_1#0="http://ganymed.ethz.ch/";
+HELP_ABOUT_URL_PROJECTS_2#0="http://code.google.com/p/regexp-me/";
+HELP_ABOUT_URL_SUPPORT_0#0="http://bbssh.org/";
+HELP_ABOUT_URL_SUPPORT_1#0="http://bbssh.org/jira/";
+HELP_ABOUT_URL_SUPPORT_2#0="http://bbssh.org/forums/";
+HELP_ABOUT_URL_SUPPORT_3#0="http://www.noetisys.com/products/bbsshsupport";
+IMPORT_KEY_LBL_AS_FILE#0="Import from local file";
+IMPORT_KEY_LBL_AS_URL#0="Import from URL";
+IMPORT_KEY_LBL_CHOOSE_FILE#0="Choose file...";
+IMPORT_KEY_LBL_FRIENDLY_NAME#0="Name:";
+IMPORT_KEY_LBL_KEEP_PASSPHRASE#0="Retain passsphrase";
+IMPORT_KEY_LBL_LOCATION#0="URL:";
+IMPORT_KEY_MSG_NO_FILE#0="Select \"Choose file...\" to select the file to import.";
+IND_COPY#0=" (Copy)";
+INFO_PRIMARY_NO_CONNECTION_DEFINED#0="Use the menu to create your first connection.";
+INFO_SETTINGS_GENERATING_KEYPAIR#0="Generating key-pair...";
+INFO_SETTINGS_GENERATING_KEYPAIR_DONE#0="Key-pair generation completed successfully.";
+KEYBIND_FILTER_LBL_BOUND#0="All Bound Shortcuts";
+KEYBIND_FILTER_LBL_MODIFIED#0="Show Modified Shortcuts";
+KEYBIND_LBL_ACTION#0="Action: ";
+KEYBIND_LBL_CLEARED#0="Binding Cleared";
+KEYBIND_LBL_FILTER#0="Event Category:";
+KEYBIND_LBL_INSTRUCTION#0="Choose a combination of key and modifer(s), then choose the action to map.  Certain actions will require additional parameters.";
+KEYBIND_LBL_KEY#0="Key: ";
+KEYBIND_LBL_PARAMETER#0="Parameter: ";
+KEYBIND_LBL_SHIFT#0="Shift";
+KEYBIND_LBL_UNBOUND#0="Available";
+KEYBIND_MACRO_EDIT_TITLE#0=" ";
+KEYBIND_MENU_ITEM_CLEAR#0="Clear shortcut";
+KEYBIND_MENU_ITEM_EDIT#0="Edit shortcut...";
+KEYBIND_MENU_ITEM_RESET#0="Reset all shortcuts";
+KEYBIND_MENU_ITEM_REVERT#0="Revert change";
+KEYBIND_MENU_VIEWBINDINGS#0="View/edit shortcuts...";
+KEYBIND_MSG_INVALID_MILLISECONDS#0="The parameter represents the number of milliseconds to wait. It must be numeric and greater than 0. ";
+KEYBIND_MSG_NO_MACROS_DEFINED#0="You  must first create macros before assigning this action.";
+KEYBIND_MSG_NO_PARAM#0="This command requires a parameter.";
+KEYBIND_MSG_VERIFY_SAVE#0="You have made changes.  If you don't save now, they will be lost when you change the filter.  Save changes now?";
+KEYBIND_SHORTCUT_EDIT_TITLE#0="Action for shortcut ";
+KEYBIND_TITLE#0="Shortcuts";
+KEYNAME_BACKLIGHT#0="Backlight";
+KEYNAME_BACKSPACE#0="Backspace";
+KEYNAME_BACKWARD#0="Backward";
+KEYNAME_CAMERA_FOCUS#0="Camera Focus / Half-press Convenience Key";
+KEYNAME_CONVENIENCE_1#0="Convenience Key 1";
+KEYNAME_CONVENIENCE_2#0="Convenience Key 2";
+KEYNAME_CURRENCY#0="Currency";
+KEYNAME_END#0="End";
+KEYNAME_ENTER#0="Enter";
+KEYNAME_ESCAPE#0="Escape";
+KEYNAME_FORWARD#0="Forward";
+KEYNAME_ITUT_0#0="0/Space";
+KEYNAME_ITUT_1#0="1/.,!?";
+KEYNAME_ITUT_2#0="2/abc";
+KEYNAME_ITUT_3#0="3/def";
+KEYNAME_ITUT_4#0="4/ghi";
+KEYNAME_ITUT_5#0="5/jkl";
+KEYNAME_ITUT_6#0="6/mno";
+KEYNAME_ITUT_7#0="7/pqrs";
+KEYNAME_ITUT_8#0="8/tuv";
+KEYNAME_ITUT_9#0="9/wxyz";
+KEYNAME_LOCK#0="Lock";
+KEYNAME_MENU#0="Menu/BlackBerry Key";
+KEYNAME_NAV_CLICK#0="Click Trackpad/Trackball/Trackwheel";
+KEYNAME_NAV_DOWN#0="Down";
+KEYNAME_NAV_LEFT#0="Left";
+KEYNAME_NAV_RIGHT#0="Right";
+KEYNAME_NAV_UP#0="Up";
+KEYNAME_R24_0#0="0/Space";
+KEYNAME_R24_AS#0="AS/?";
+KEYNAME_R24_BN#0="BN/8";
+KEYNAME_R24_CV#0="CV/7";
+KEYNAME_R24_DF#0="DF/4";
+KEYNAME_R24_ER#0="ER/1";
+KEYNAME_R24_GH#0="GH/5";
+KEYNAME_R24_JK#0="JK/6";
+KEYNAME_R24_L#0="L/,";
+KEYNAME_R24_M#0="M/9";
+KEYNAME_R24_OP#0="OP/.";
+KEYNAME_R24_QW#0="QW/!";
+KEYNAME_R24_TY#0="TY/2";
+KEYNAME_R24_UI#0="UI/3";
+KEYNAME_R24_ZX#0="ZX/@";
+KEYNAME_SEND#0="Send";
+KEYNAME_SPACE#0="Space";
+KEYNAME_SPEAKERPHONE#0="Mute";
+KEYNAME_SWIPE_EAST#0="Swipe Right";
+KEYNAME_SWIPE_NORTH#0="Swipe Up";
+KEYNAME_SWIPE_NORTHEAST#0="Swipe Up-Right";
+KEYNAME_SWIPE_NORTHWEST#0="Swipe Up-Left";
+KEYNAME_SWIPE_SOUTH#0="Swipe Down";
+KEYNAME_SWIPE_SOUTHEAST#0="Swipe Down-Right";
+KEYNAME_SWIPE_SOUTHWEST#0="Swipe Down-Left";
+KEYNAME_SWIPE_WEST#0="Swipe Left";
+KEYNAME_SYM#0="SYM";
+KEYNAME_TOUCH_PINCH_IN#0="Pinch In";
+KEYNAME_TOUCH_PINCH_OUT#0="Pinch Out";
+KEYNAME_TOUCH_REGION_CENTER#0="Center";
+KEYNAME_TOUCH_REGION_EAST#0="Center Right";
+KEYNAME_TOUCH_REGION_NORTH#0="Top Center";
+KEYNAME_TOUCH_REGION_NORTHEAST#0="Top Right";
+KEYNAME_TOUCH_REGION_NORTHWEST#0="Top Left";
+KEYNAME_TOUCH_REGION_SOUTH#0="Bottom Center";
+KEYNAME_TOUCH_REGION_SOUTHEAST#0="Bottom Right";
+KEYNAME_TOUCH_REGION_SOUTHWEST#0="Bottom Left";
+KEYNAME_TOUCH_REGION_WEST#0="Center Left";
+KEYNAME_VOLUME_DOWN#0="Volume Down";
+KEYNAME_VOLUME_UP#0="Volume Up";
+KEYNAME_ZERO#0="0 (zero) ";
+KEY_MGR_EMPTY_LIST_TEXT#0="Use the menu to import keys.";
+KEY_MGR_LABEL_COPY_PK#0="Copy Public Key to Clipboard";
+KEY_MGR_LABEL_GENERATE#0="Generate Key";
+KEY_MGR_LABEL_IMPORT#0="Import Key";
+KEY_MGR_MENU_COPY_KEY#0="Copy Public Key to Clipboard";
+KEY_MGR_MENU_DEL_KEY#0="Delete";
+KEY_MGR_MENU_EDIT#0="Edit Key Properties";
+KEY_MGR_MENU_REFRESH#0="Reload From Source";
+KEY_MGR_TITLE#0="Private Keys";
+KEY_PASS_LBL_TITLE#0="Enter passphrase for key: ";
+KEY_PASS_LBL_UPDATE_KEY#0="Remember this passphrase.";
+MACRO_EDIT_CONFIRM_CANCEL#0="Your changes will be lost if you cancel. Do you wish to cancel?";
+MACRO_EDIT_INSTRUCTIONS#0="Add steps to the macro ";
+MACRO_EDIT_MSG_NAME_IN_USE#0="This macro name is already in use. Please change it.";
+MACRO_EDIT_MSG_NO_CONTENT#0="You must add at least one command to this macro.";
+MACRO_EDIT_MSG_NO_NAME#0="Please enter a valid name for this macro.";
+MACRO_EDIT_NAME#0="Macro Name:";
+MACRO_LIST_INSTRUCTIONS#0="Tap/click on a macro to execute it.";
+MACRO_LIST_MANAGE_MACROS#0="Manage Macros...";
+MACRO_LIST_NO_MACRO_STRING#0="Use the menu to create a macro.";
+MACRO_MANAGER_EMPTY_LIST#0="From the menu, choose New to begin";
+MACRO_MANAGER_INSTRUCTIONS#0="Create, edit, or delete macros using the menu.";
+MACRO_MANAGER_TITLE#0="Macros";
+MACRO_MENU_DEL#0="Delete Macro";
+MACRO_MENU_EDIT#0="Edit Macro";
+MACRO_MENU_NEW#0="New Macro";
+MACRO_TITLE_EDIT#0="Edit Macro: ";
+MACRO_TITLE_NEW#0="Create New Macro";
+MENU_ABOUT#0="About BBSSH";
+MENU_ADD_ACTION#0="Add Action";
+MENU_BACKGROUND#0="Background";
+MENU_CLOSE_SESSION#0="Terminate Session";
+MENU_CONNECT#0="Connect";
+MENU_CONNECTION_LIST#0="Return to Connection List";
+MENU_DECREASE_FONT#0="Decrease Font Size";
+MENU_DELETE#0="Delete";
+MENU_DELETE_ACTION#0="Delete Action";
+MENU_DELETE_CONNECTION#0="Delete Connection";
+MENU_DISCONNECT#0="Disconnect";
+MENU_DUPLICATE#0="Duplicate";
+MENU_EDIT_ACTION#0="Edit Action";
+MENU_EDIT_CONNECTION#0="Edit Connection";
+MENU_HELP#0="Help";
+MENU_IMPORT#0="Import";
+MENU_INCREASE_FONT#0="Increase Font Size";
+MENU_KEYBINDINGS#0="View/Edit Shortcuts";
+MENU_KEY_MANAGER#0="Private Keys";
+MENU_MACROS#0="Macros";
+MENU_MOVEDOWN#0="Move Down [Alt+Nav Down]";
+MENU_MOVEUP#0="Move Up [Alt+Nav Up]";
+MENU_NEW_CONNECTION#0="New Connection";
+MENU_RECONNECT#0="Reconnect";
+MENU_RESET_ALL#0="Reset All";
+MENU_RESUME#0="Resume";
+MENU_RUN_MACRO#0="Run Macro";
+MENU_SEND_FEEDBACK#0="Send Feedback...";
+MENU_SETTINGS#0="Settings";
+MENU_SET_FONT#0="Set Font...";
+MENU_SHORTCUT_ADD#0="Create Homescreen Shortcut";
+MENU_SHORTCUT_REMOVE#0="Remove Homescreen Shortcut";
+MENU_SHOW_SYMBOLS#0="Show Symbols";
+MENU_TERM_DIRECT_INPUT#0="Switch to Direct Input";
+MENU_TERM_HIDE_KEYBOARD#0="Hide Keyboard";
+MENU_TERM_HYBRID_INPUT#0="Switch to Hybrid Input";
+MENU_TERM_INPUT_SCREEN#0="Show Input Window";
+MENU_TERM_SCROLLING#0="Switch to Scrolling Mode";
+MENU_TERM_SHORTCUT_BAR#0="Show Toolbar";
+MENU_TERM_SHOW_KEYBOARD#0="Show Keyboard";
+MODNAME_ALT#0="[Alt]";
+MODNAME_ALT_LOCK#0="AltLock";
+MODNAME_CAPS_LOCK#0="CapsLock";
+MODNAME_KEY_ROLL#0="KeyRoll";
+MODNAME_LSHIFT#0="[Left Shift]";
+MODNAME_RSHIFT#0="[Right Shift]";
+MODNAME_SHIFT#0="[Shift]";
+MSG_BES_TIMEOUT_INVALID#0="BES timeout must be greater than 0. ";
+MSG_BUFFER_COPIED_TO_CLIP#0="Current buffer has been copied to the clipboard.";
+MSG_CLIENT_KEEPALIVE_LOW_VAL_WARN#0="Very low client keepalive values may cause extra battery drain. Recommended value is a minimum of 25.  Do you want to keep the value you have entered?";
+MSG_CONFIRM_ANS_REMEMBER#0="Do not show this again.";
+MSG_CONFIRM_DELETE#0="Are you sure that you wish to delete?";
+MSG_CONFIRM_DEL_CONNECTION#0="This cannot be undone. Are you sure that you wish to delete this connection?";
+MSG_CONFIRM_EXIT_ANS_BACKGROUND#0="Background";
+MSG_CONFIRM_EXIT_ANS_EXIT#0="Exit";
+MSG_CONFIRM_EXIT_ANS_NEVERMIND#0="Nevermind";
+MSG_CONFIRM_EXIT_CONN_OPEN#0="You still have connections open. Exit BBSSH, or continue running in the background? ";
+MSG_CONNECTION_REQUIRED#0="Please select a connection first.";
+MSG_DATA_USAGE_WARN#0="Important: using BBSSH to connect to servers can incur data usage charges. For more information, please contact your service provider.";
+MSG_ERROR#0="An error has occurred:";
+MSG_FEEDBACK_COULD_NOT_READ_LOG#0="The log file could not be read, and will not be attached. ";
+MSG_FEEDBACK_INCLUDE_LOGS#0="You currently have debugging logging enabled.  Note that the remote host(s) you've connected to may be visible in the logs, but no security credentials are in the logs. Would you like to attach the debug log to this message? ";
+MSG_FEEDBACK_INCLUDE_SCREENSHOT#0="Would you like to attach a screenshot of  this terminal? (BES users: this might be disallowed by your administrator.)";
+MSG_FONT_INFO#0="Font set to:";
+MSG_FONT_LOAD_FAILED#0="Could not load selected font. Please modify connection properties to choose a different font.";
+MSG_INVALID_CLIENT_KEEPALIVE#0="Client keepalive must be 0 or greater.  A value of 0 disables client keepalive messages.";
+MSG_INVALID_HOST_NAME#0="Pleas enter a valid host name.";
+MSG_INVALID_HTTP_PROXY_HOST_NAME#0="Please provide a valid HTTP proxy host name.";
+MSG_INVALID_PORT#0="Port must be between 1 and 65536; leave it blank and ensure that there is no colon in the host name to use defaults. ";
+MSG_INVALID_SESSION_NAME#0="Please provide a valid name for this session.";
+MSG_INVALID_URL_OR_LOC#0="You must enter a valid URL or filesystem location.";
+MSG_INVALID_USERNAME#0="Please provide a valid user name.";
+MSG_KEYBIND_NO_SELECTION#0="Please choose an action from the dropdown list.";
+MSG_KEYBIND_RESET_COMPLETE#0="Shortcut reset complete.";
+MSG_KEYBIND_RESET_CONFIRM#0="Reset all shortcuts to default/recommended settings? Any customizations will be lost.";
+MSG_KEYPAIR_ERROR_OCCURRED#0="An error occurred while importing the key-pair. Please check that the location is a valid http or https URL.";
+MSG_KEYPAIR_GENERATE_SUCCESS#0="A new DSA keypair was generated successfully.  After updating the remote server, you can use this for authentication.";
+MSG_KEYPAIR_IMPORT_SUCCESS#0="The keypair was imported successfully.";
+MSG_KEYPAIR_NAME_REQUIRED#0="Please supply a name for this keypair.";
+MSG_KEYPAIR_PASSWORD_FAILED#0="The passphrase  provided is incorrect. Please correct and try again.";
+MSG_KEY_COPIED_TO_CLIP#0="Public Key has been copied to clipboard.";
+MSG_KEY_IMPORT_INVALID_URL#0="There was a problem with the URL you provided: ";
+MSG_KEY_IN_USE#0="This key can't be deleted because it is attached to one or more defined connections.";
+MSG_NET_PERMISSIONS_MISSING_ADD_NOW#0="BBSSH does not have permissions to use the requested connection type.  Would you like to grant this permission now? ";
+MSG_NET_PERMISSIONS_MISSING_WIFI#0="You have chosen to use WiFi if available, however BBSSH does not have permissions to use WiFi.  Would you like to grant this permission now? (Selecting No will disable Use Wifi If Available for this connection.) ";
+MSG_NOTICE#0="Notice: ";
+MSG_NOT_ALLOWED_CONNECTED#0="You cannot perform this action on a session that is connected.";
+MSG_NO_KEY_ALLOWED#0="Telnet does not support public-key authentication.  Please change key selection to \"None\".";
+MSG_NO_OTHER_SESSION_CONNECTED#0="There are no connected sessions other than this one.";
+MSG_NO_PERMISSIONS#0="BBSSH does not have permissions to perform this function.";
+MSG_NO_USER_NAME_PASS_ALLOWED#0="Telnet does not support non-interactive username/password authentication. Please clear username and password.";
+MSG_ORIENTATION_LOCKED#0="Orientation has been locked.";
+MSG_ORIENTATION_UNLOCKED#0="Orientation has been unlocked";
+MSG_PASSPHRASE_WARN#0="If you leave passphrase blank, this key will require a passphrase every time you use it.  Import it anyway?";
+MSG_PERMISSIONS_MISSING_EMAIL_FEEDBACK#0="In order to send feedback, BBSSH will need email permissions.  Would you like to grant those permissions now?";
+MSG_PERMISSIONS_MISSING_EMAIL_SCRAPER#0="In order to compose a blank email, BBSSH will need email permissions.  Would you like to grant those permissions now?";
+MSG_PERMISSIONS_MISSING_FILE_ACCESS_LOGGING#0="BBSSH needs File permissions in order to write to a log file.  Would you like to grant those permissions now?";
+MSG_PERMISSIONS_MISSING_FILE_ACCESS_USER#0="BBSSH does not have the necessary permissions to open or save a file.  Would you like to grant those permissions now?";
+MSG_PERMISSIONS_MISSING_FILE_IMPORT#0="BBSSH does not have the necessary permissions to import a key file from local storage/SD.  Would you like to grant those permission snow?";
+MSG_PERMISSIONS_MISSING_MEDIA#0="BBSSH requires Media permissions in order to modify its notification icon on the home screen. .  Denying this permission will result in disabling the option 'enable home screen notification' in Settings.";
+MSG_PERMISSIONS_MISSING_PHONE#0="BBSSH does not have the necessary permissions to check if a phone call is in progress. This is needed in order to disable custom bindings  to send/end/volume/mute for the duration of a call. Would you like to grant those permissions now?";
+MSG_PERMISSIONS_MISSING_PHONE_SCRAPER#0="In order to dial this number, BBSSH will need permissions to access your phone.  Would you like to grant those permissions now?";
+MSG_PERMISSIONS_MISSING_PIM_SCRAPER#0="In order to create a new contact entry, BBSSH will need access to your address book.  Would you like to grant those permissions now?";
+MSG_PROXY_HOST_INVALID#0="You must provide a valid proxy host.";
+MSG_PUBLIC_KEY_NOT_ENABLED#0="Please enable public key authentication on the Settings page prior to enabling it here.";
+MSG_PUBLIC_KEY_REQUIRED#0="You must enable and generate a key-pair from the Settings page before this action can be taken.";
+MSG_REGEN_PUBLIC_KEY_WARNING_1#0="We must regenerate your public/private key pair. Do you wish to do this now?";
+MSG_REGEN_PUBLIC_KEY_WARNING_2#0="We must generate your public/private key pair. Do you wish to do this now?";
+MSG_REGEN_PUBLIC_KEY_WARNING_OVERWRITE#0="Generating a new key pair will overwrite your old. You will need to update any servers already using it.  Continue?";
+MSG_SETTINGS_CANNOT_DISABLE_DEV_UPDATE#0="When running in Development mode, you cannot disable update checking. ";
+MSG_SETTINGS_INVALID_UPDATE_INTERVAL#0="Update interval must be between 1 and 30 days. ";
+MSG_SETTINGS_NO_APN#0="If a username is provided, APN must also be provided. ";
+MSG_SETTINGS_NO_APN_USERNAME#0="If a password is provided, username and APN must also be provided. ";
+MSG_TERMINAL_CREATION_FAILED#0="A system error has occurred, causing terminal creation to fail.  Please contact support with this information: ";
+MSG_UPDATE_AVAILABLE#0="A new version of BBSSH is available. Would you like to install it now?";
+MSG_UPDATE_AVAILABLE_DEV#0="An updated development build of BBSSH is available.  Would you like to install it now?";
+MSG_UPDATE_CHECK_FAILED#0="An error occurred while checking for the latest version.  Please try again later, or visit http://bbssh.org/ota/ to check for the latest version. ";
+MSG_UPDATE_UP_TO_DATE#0="You are running the latest version of BBSSH.";
+MSG_USAGE_SUMMARY#0="\r\nYou have been disconnected\r\n\r\nBYTES IN/OUT/TOTAL: {0} / {1} / {2}\r\n";
+MSG_WARNING_DATA_USAGE#0="Please note that data usage charges from your carrier will apply to any connections other than WiFi made via BBSSH. ";
+MSG_WRONG_VERSION#0="You are running the wrong version of BBSSH for your BlackBerry.  Download the correct version now?";
+NOTIFICATION_BELL#0="Terminal bell sounded.";
+NOTIFICATION_DATA#0="Data has been received. ";
+NOTIFICATION_ERROR#0="The following error occurred: ";
+NOTIFICATION_NO_DATA_TIMEOUT#0="No data has been received within the specified time.";
+NOTIFICATION_TIME_EXPIRED#0="The specified time has elapsed.";
+PASSWORD_LABEL_1#0="Password:";
+PASSWORD_LABEL_2#0="Confirm Password:";
+PASSWORD_MSG_NO_PASSWORD#0="Password is required. ";
+PASSWORD_MSG_PASSWORD_MISMATCH#0="The passwords you entered do not match. ";
+PERM_DESC_EMAIL#0="This permission is required when you send an email using the URL grabber; or when you use the Send Feedback option to send an email. ";
+PERM_DESC_FILE#0="You will be prompted for File permissions when BBSSH is performing any of the following tasks: 1) trying to save a screen capture from within BBSSH.  2) importing a private key file from SD or device storage.  3) Opening a debugging log file on your SD or device storage.";
+PERM_DESC_INTERPROC#0="This permissions is required in order for BBSSH to perform any of the following tasks:   1) save and restore your connections, key bindings, and preferences 2) launch the web browser when you choose to update BBSSH, when you choose the Help option, and when you use the Donate option 3) use the Send Feedback option to send a feedback email 4) launch the web browser, email app, or phone app as appropriate when you use the URL/email/phone scraping feature.  ";
+PERM_DESC_KEYSTORE#0="This optional permission allows BBSSH to store private key data in your BlackBerry device's secure key store.   This key data is used for authentication.  If you do not intend to use public key authentication, you do not need to provide this permission. ";
+PERM_DESC_MEDIA#0="This permission is required for BBSSH to display notifications and/or play alerts when session notifications occur.  BBSSH also clears any of its own notifications at various events, which also requires this permission. ";
+PERM_DESC_NET_EXTERNAL#0="This permissions is required to open a socket to a remote server such as when connecting via SSH or Telnet.  It can also be invoked when BBSSH is checking for software updates.  ( You can disable this update check in Settings.) ";
+PERM_DESC_NET_INTERNAL#0="This permission is required when BBSSH attempts to connect to remote hosts via BES. This can occur when connecting to an SSH or Telnet server; or when BBSSH is checking for updates.";
+PERM_DESC_PHONE#0="This permission is required when BBSSH looks to see if a call is in progress, in order to disable custom Send/End/Mute/Volume bindings for the duration of the call.  This is also requested if you use the URL Grabber to dial a phone number from the terminal screen.";
+PERM_DESC_PIM#0="This permission is required when you request that BBSSH add a new contact using the URL grabber screen.";
+PERM_DESC_WIFI#0="This permission is required when BBSSH attempts to detect connection availability, and when it attempts to connect to remote hosts via WiFi.  This can occur when connecting to an SSH or Telnet server; or when BBSSH is checking for updates.";
+PERM_ERROR_NO_NETWORK_PERM#0="At least one of the three network permissions are required (Internal, External, or WiFi), or else BBSSH has no way to connect to a remote host.";
+PERM_HELPER_INSTRUCTION#0="In order to help ensure that BBSSH uses only the minimal required permissions, please check off the activities you expect to perform from within BBSSH.  If the needed permissions are missing, you will be prompted to to approve them. You can return to change these at any time by choosing \"Update Permissions\" from the BBSSH Settings screen. ";
+PERM_HELPER_LBL_INTEGRATION#0="BlackBerry Integration";
+PERM_HELPER_LBL_TROUBLESHOOTING#0="Troubleshooting";
+PERM_HELPER_LBL_UPDATE#0="Update Permissions";
+PERM_HELPER_MSG_COMING_NEXT#0="Your BlackBerry may now prompt you to approve the permissions you have chosen for BBSSH.  BBSSH is requesting the absolute minimum required permissions necessary to perform the actions you've specified.  Please choose \"Allow\" for each of those permissions. ";
+PERM_HELPER_MSG_PERM_SUCCESS#0="The necessary permissions have been obtained.  In order to return to this screen, choose the menu item \"Update Permissions\" from the Settings screen. ";
+PERM_HELPER_PERM_FAILED#0="The requested permissions could not be obtained.  This may be due to administrative policy if you're on BES, or because you declined to approve the requested permissions.  Some or all of the chosen BBSSH operations may not function correctly.";
+PERM_HELPER_Q_BES_CONNECTION#0="Connect to a remote server that is accessible via your corporate network. (Connection type: BES)";
+PERM_HELPER_Q_DEBUG_LOG_FILE#0="Enable debug logging to help the BBSSH development team support or troubleshoot a problem that you report.  (No sensitive or personally identifiable information is included in debug logging.)";
+PERM_HELPER_Q_DISABLE_BINDINGS#0="Disable custom hotkey attachments for Send, End, Mute and Volume keys when on a phone call. ";
+PERM_HELPER_Q_GENERATE_KEY#0="Create a public/private keypair from inside BBSSH for use in authentication. ";
+PERM_HELPER_Q_IMPORT_KEY#0="Import a public/private keypair from your SD card or your BlackBerry mass storage. ";
+PERM_HELPER_Q_INTERNET_CONNECTION#0="Connect to a remote server that is accessible via the Internet.  (Connection types: TCP, WAP2, BIS-B)";
+PERM_HELPER_Q_SCREEN_CAPTURE#0="Use BBSSH's internal screen capture function to save a screen capture or include a screen capture with a feedback/support email.";
+PERM_HELPER_Q_SEND_SUPPORT_EMAIL#0="Send an email to BBSSH support containing a BBSSH screenshot or log file";
+PERM_HELPER_Q_URL_GRABBER#0="Use BBSSH's URL Grabber tool in order to extract URLs, Phone Numbers, and Email Addresses from a remote session.";
+PERM_HELPER_Q_WIFI_CONNECTION#0="Connection to a remote server that is accessible via your WiFi connection. ";
+PERM_HELPER_TITLE#0="Permissions Helper";
+PRIMARY_DELETE_CONNECTION_PROMPT#0="Would you also like to delete the connection itself?";
+PRIMARY_INITIALIZING#0="Initializing...";
+PRIMARY_SHORCUT_INVALID#0="This shortcut is no longer valid. Would you like to delete it?";
+PRIMARY_SOME_CHANGES_NEED_RECONNECT#0="Note that some updates will not take effect until the next time you connect.";
+PRIMARY_TERMINAL_LOGGING_DISABLED#0="Terminal logging disabled for this connection. If a session is in progress, this will take effect after it has been closed.";
+PRIMARY_TERMINAL_LOGGING_ENABLED#0="Terminal logging enabled for the selected connection.  It will be disabled after BBSSH is restarted.";
+RECOVERY_INSTRUCTION#0="An unexpected error has occurred, and BBSSH must shut down.  If this has happened more than once it can be due to internal data corruption; in that case, resetting data may help. Please choose which data you wish to reset, then press \"Reset Data\". If you have performd a recent desktop sync, you may be able to recover some or all of this information by restoring from backup.";
+RECOVERY_INSTRUCTION_BAD_VER#0="BBSSH was not exited cleanly; or you may have installed an older version of BBSSH.  If you do not wish to attempt to reset data, choose 'exit without reset', then restart BBSSH.  If you have received this screen more than once in a row, it's recommended that you reset Settings at minimum. ";
+RECOVERY_LABEL_EXIT#0="Reset complete. It is recommended that you do a battery pull or reset in order for features such as notifications and save/restore settings  to and from desktop to work properly.   Close this window to exit BBSSH. If you have performd a recent desktop sync, you may be able to recover some or all of this information by restoring from backup after a restart of your BlackBerry.";
+RECOVERY_LABEL_EXIT_NO_RESET#0="Exit Without Reset";
+RECOVERY_LABEL_RESET_DATA#0="Reset Data";
+RECOVERY_RESET_CLEAR_ALL#0="Select All";
+RECOVERY_RESET_MACROS#0="Remove all macros";
+RECOVERY_RESET_SAVED_CONNECTIONS#0="Remove all saved connections";
+RECOVERY_RESET_SAVED_KEYS#0="Remove all saved keys";
+RECOVERY_RESET_SETTINGS#0="Reset all settings/preferences.";
+RECOVERY_RESET_SHORTCUTS#0="Reset keyboard shortcuts to default.";
+RECOVERY_TITLE#0="Failed to Load";
+SCREEN_MANAGER_SCREENNAMES#0={
+    "Placeholder/Do Not Use",
+    "View/Edit Shortcuts",
+    "Macros",
+    "Special Keys",
+    "URL Scraper",
+    "Change Font",
+};
+SESSION_DETAIL_ALERT_COUNT#0="Number of Alerts";
+SESSION_DETAIL_CONN_DURATION#0="Connection Duration";
+SESSION_DETAIL_CRYPTO_DATA#0="Crypto Information";
+SESSION_DETAIL_DATA_TRANSFER#0="Data Transfer";
+SESSION_DETAIL_LAST_ACTIVITY#0="Last Activity";
+SESSION_DETAIL_TITLE#0="Session Detail ";
+SESSION_DTL_ALT_PREFIX_META#0="Send Meta prefix when Alt used";
+SESSION_DTL_LBL_APPEARANCE#0="Terminal Settings";
+SESSION_DTL_LBL_BES_TIMEOUT#0="BES Timeout Duration (seconds):";
+SESSION_DTL_LBL_BG_COLOR#0="Background Color: ";
+SESSION_DTL_LBL_CLEAR_PASSWORD#0="Clear";
+SESSION_DTL_LBL_COLS#0="Columns: ";
+SESSION_DTL_LBL_CONNECTION_PASSWORD#0="Enter connection password below.";
+SESSION_DTL_LBL_CONN_DETAILS#0="Connection Details";
+SESSION_DTL_LBL_CONN_HOST#0="Host: ";
+SESSION_DTL_LBL_CONN_NAME#0="Connection Name: ";
+SESSION_DTL_LBL_CONN_PORT#0="Port: ";
+SESSION_DTL_LBL_FG_COLOR#0="Foreground Color: ";
+SESSION_DTL_LBL_FN_KEY_WORKAROUND#0="Function Key Mode:";
+SESSION_DTL_LBL_FONT#0="Font:";
+SESSION_DTL_LBL_FONT_NAME#0="Font Name:";
+SESSION_DTL_LBL_FONT_REFRESH#0="Update Preview";
+SESSION_DTL_LBL_FONT_SIZE#0="Font Size:";
+SESSION_DTL_LBL_FONT_TYPE#0="Font Type:";
+SESSION_DTL_LBL_HASPASS#0="(Password Set)";
+SESSION_DTL_LBL_HTTP_PROXY_HOST#0="HTTP Proxy Host:";
+SESSION_DTL_LBL_HTTP_PROXY_MODE#0="HTTP Proxy Mode: ";
+SESSION_DTL_LBL_KEEPALIVE_DURATION#0="Client Keepalive Interval:";
+SESSION_DTL_LBL_KEY#0="Key";
+SESSION_DTL_LBL_LOGIN_PASSWORD#0="Password: ";
+SESSION_DTL_LBL_LOGIN_USERNAME#0="Username: ";
+SESSION_DTL_LBL_NETWORKING#0="Networking";
+SESSION_DTL_LBL_NOPASS#0="(Password Not Set)";
+SESSION_DTL_LBL_ROWS#0="Rows: ";
+SESSION_DTL_LBL_SCROLLBACK#0="Scrollback Lines: ";
+SESSION_DTL_LBL_SESSION_TYPE#0="Connection Type:";
+SESSION_DTL_LBL_SET_PASSWORD#0="Set...";
+SESSION_DTL_LBL_TERMINAL_TYPE#0="TERM value: ";
+SESSION_DTL_LBL_USE_HYBRID#0="Use Hybrid input mode by default.";
+SESSION_DTL_LBL_USE_PAIR#0="Use public-key authentication.";
+SESSION_DTL_LBL_USE_POLLING_IO#0="Use Polling IO";
+SESSION_DTL_LBL_USE_WIFI_IF_AVAILABLE#0="Use WiFi if available";
+SESSION_DTL_LIST_COLORS#0={
+    "Black",
+    "Red",
+    "Green",
+    "Yellow",
+    "Blue",
+    "Magenta",
+    "Cyan",
+    "White",
+};
+SESSION_DTL_LIST_CONNECT_CHOICES#0={
+    "TCP/IP",
+    "BES (Corporate)",
+    "Wifi",
+    "WAP2",
+    "BIS-B (Experimental)",
+};
+SESSION_DTL_LIST_FN_KEY_MODES#0={
+    "VT100/XTerm",
+    "Linux (app keypad)",
+    "Linux",
+};
+SESSION_DTL_LIST_FONT_SIZE_CHOICES#0={
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+};
+SESSION_DTL_LIST_FONT_TYPE_CHOICES#0={
+    "Bitmap",
+    "Truetype",
+};
+SESSION_DTL_LIST_PROXY_CHOICES#0={
+    "None",
+    "Persistent",
+    "Transient",
+};
+SESSION_DTL_LIST_SESSION_TYPES#0={
+    "SSH",
+    "Telnet",
+};
+SESSION_DTL_MSG_NO_TRUETYPE#0="Truetype fonts are only supported in OS 5.0 and later. ";
+SESSION_DTL_MSG_NO_WAP#0="A WAP2 servicebook has not been provisioned by your provider.";
+SESSION_DTL_MSG_PASSWORD_CLEARED#0="Password will be cleared when you save the connection updates.";
+SESSION_DTL_NO_KEY#0="(None)";
+SESSION_DTL_TITLE_0#0="Default Connection Properties";
+SESSION_DTL_TITLE_1#0="Define New Connection";
+SESSION_DTL_TITLE_2#0="Edit Connection";
+SESSION_DTL_VALUE_FONT_BITMAP#0="Bitmap";
+SESSION_PROMPT_TITLE#0="User: ";
+SESSION_PROMPT_USERNAME_PASS#0="Please provide username and password for this connection. ";
+SETTINGS_LBL_ALLOW_NOTIFICATION_ICONS#0="Show home screen notification icon when BBSSH is in the background and an alert occurs. ";
+SETTINGS_LBL_APN#0="APN:";
+SETTINGS_LBL_APN_PASSWORD#0="APN Password:";
+SETTINGS_LBL_APN_USER#0="APN Username:";
+SETTINGS_LBL_AUTOCHECK_VERSION#0="Check for updates on startup.";
+SETTINGS_LBL_BACKROUND_ON_CLOSE#0="If a session is connected when you close BBSSH, send BBSSH to the background instead of disconnecting and closing. (If no connections are open, BBSSH will always close normally.)";
+SETTINGS_LBL_CHECKING#0="Checking for updates...";
+SETTINGS_LBL_CONN_DEFAULTS#0="Edit Connection Defaults...";
+SETTINGS_LBL_DEFAULT_CONNTYPE#0="Connection Type";
+SETTINGS_LBL_DISABLE_KEYBIND_ON_CALL#0="When a call is in progress, disable custom hotkey assignments for Send, End, Mute, and Volume keys. ";
+SETTINGS_LBL_ENABLE_MESSAGE_LIST#0="Enable message list integration for notifications";
+SETTINGS_LBL_ENABLE_TITLEBAR#0="Display standard title bar with signal and battery info in the terminal screen. ";
+SETTINGS_LBL_HOMESCREEN_NOTIFY#0="Display notification icon on Home screen";
+SETTINGS_LBL_INTEGRATION#0="BlackBerry Integration";
+SETTINGS_LBL_LOADING_KEY#0="Loading Key...";
+SETTINGS_LBL_NETWORKING#0="Networking Options";
+SETTINGS_LBL_SECURITY#0="Security";
+SETTINGS_LBL_SEND_ANON_USAGE#0="Send the following usage stats to bbssh.org: BB platform version, BBSSH version, device model (9000, 9700, etc), unique anonymous identifier";
+SETTINGS_LBL_SHOW_KBD_SLIDER_CLOSE#0="Show virtual keyboard on slider close.";
+SETTINGS_LBL_SHOW_PLAINTEXT#0="Show password text when entering passwords";
+SETTINGS_LBL_UPDATE#0="Update Options";
+SETTINGS_LBL_UPDATE_INTERVAL#0="Number of days between update checks/usage data submit:";
+SETTINGS_LBL_VIBRATE_ON_BELL#0="Vibrate when bell is received.";
+SETTINGS_MENU_UPDATE_PERMS#0="Update Permissions";
+SETTINGS_PROMPT_NEED_CALL_PERM#0="In order for BBSSH to detect when a call is in progress, you must grant the \"Phone Information\" permission.";
+SETTINGS_TITLE#0="Settings";
+STARTER_WIZ_LBL_AGREE#0="Agree";
+STARTER_WIZ_LBL_DECLINE#0="Decline";
+STARTER_WIZ_LBL_ENABLE_STATS#0="Help to make the BBSSH experience better for you and others by sending anonymous usage information to bbssh.org.  This data is not personal, and is never shared with any third party.";
+STARTER_WIZ_LBL_ENABLE_UPDATE#0="Check for the latest security and feature updates when launching BBSSH?  (Recommended) ";
+STARTER_WIZ_LBL_LICENSE#0={
+    "BBSSH is Copyright 2010 Marc A. Paradise and Noetisys. Portions copyright 2004-2008 Karl von Randow , 1996-2002 Radek Polak Matthias L. Jugel and Marcus Meiﬂner.  BBSSH is distributed under terms of v2 of the GNU General Public License.",
+    " ",
+    "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.",
+    " ",
+    "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.",
+    " ",
+    "To view the full text of the GNU General Public License, visit  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html or write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.  Pursuant to the terms of GPLv2, the full source code for BBSSH is freely available at the BBSSH web site, http://bbssh.org/.",
+    "",
+    "By accepting this license, you agree that Noetisys, channel partners, associated service providers , and resellers are not liable for any damages that arise from either your operation of this software; or its failure to operate on your device.",
+    "",
+    "Click \"Agree\" to accept the terms of the license agreement, or \"Decline\" to decline the agreement and exit BBSSH.",
+};
+STARTER_WIZ_LBL_NO#0="No";
+STARTER_WIZ_LBL_YES#0="Yes";
+STATUS_MSG_ALT_PRESSED#0="Alt";
+STATUS_MSG_CTRL_PRESSED#0="Ctrl";
+STATUS_MSG_IND_BB_ALT#0="bbALT";
+STATUS_MSG_IND_BB_SHIFT#0="bbShift";
+STATUS_MSG_IND_BB_SHIFT_LEFT#0="bbLeftShift";
+STATUS_MSG_IND_BB_SHIFT_RIGHT#0="bbRightShift";
+STATUS_MSG_IND_RECORDING#0="REC";
+STATUS_MSG_IND_SCROLL_MODE#0="Scroll Mode";
+STATUS_MSG_IN_SCROLL_MODE#0="Can't Type In Scroll Mode";
+SUPPORT_EMAIL_ADDRESS#0="bbssh-support@bbssh.org";
+SUPPORT_EMAIL_FEEDBACK_ADDRESS#0="bbssh-feedback@bbssh.org";
+SUPPORT_EMAIL_FEEDBACK_NAME#0="BBSSH Feedback";
+SUPPORT_EMAIL_NAME#0="BBSSH Support";
+SYMBOL_CAPTURE_ERROR#0="The Symbols menu is not available at this time. ";
+TERMINAL_MSG_ALERT_IN_SESSION#0="Alert in session: {0}";
+TERMINAL_MSG_AT_BOTTOM#0="At Bottom";
+TERMINAL_MSG_AT_LEFT#0="At Left";
+TERMINAL_MSG_AT_RIGHT#0="At Right";
+TERMINAL_MSG_AT_TOP#0="At Top";
+TERMINAL_MSG_BINDING_DISABLED#0="Hotkey temporarily disabled.";
+TERMINAL_MSG_DISCONNECTED#0="Session Disconnected";
+TERMINAL_MSG_DISCONNECTED_OTHER#0="Disconnected: {0} ";
+TERMINAL_MSG_FONT_NOT_LOADED#0="Could not load selected font. Keeping old font.";
+TERMINAL_MSG_INVALID_FONT_SIZE#0="Can't change font size.  Keeping old font.";
+TERMINAL_MSG_KEY_UNBOUND#0="Configure w/ 'View/Edit Shortcuts' ";
+TITLE_CONNECTIONS#0="Connections";
+URLLIST_MENU_ADD_CONTACT#0="Add to Contacts";
+URLLIST_MENU_COPY#0="Copy ";
+URLLIST_MENU_DIAL_NUMBER#0="Call ";
+URLLIST_MENU_OPEN_BROWSER#0="Get Link";
+URLLIST_MENU_SEND_EMAIL#0="Email ";
+URLLIST_NO_MATCH#0="No URLs or email addresses were found.";
+URLLIST_TITLE#0="URL Grabber";
+URL_DONATE#0="http://bbssh.org/donate.html";
+URL_DOWNLOAD#0="http://bbssh.org/ota/";
+URL_DOWNLOAD_DEV#0="http://dev.bbssh.org/bbssh/";
+URL_HELP#0="http://bbssh.org/help/get?s=";
+URL_HELP_DEV#0="http://dev.bbssh.org/help/get?s=";
+URL_UPDATE#0="http://bbssh.org/ota/?app=bbssh&req=version";
+URL_UPDATE_DEV#0="http://dev.bbssh.org/bbssh/?app=bbssh&req=version";
+VTKEYNAME_BACK_SPACE#0="Backspace";
+VTKEYNAME_CLEAR#0="Clear";
+VTKEYNAME_DELETE#0="Delete";
+VTKEYNAME_DOWN#0="Down";
+VTKEYNAME_END#0="End";
+VTKEYNAME_ENTER#0="Enter";
+VTKEYNAME_ESCAPE#0="Escape";
+VTKEYNAME_F1#0="F1";
+VTKEYNAME_F10#0="F10";
+VTKEYNAME_F11#0="F11";
+VTKEYNAME_F12#0="F12";
+VTKEYNAME_F2#0="F2";
+VTKEYNAME_F3#0="F3";
+VTKEYNAME_F4#0="F4";
+VTKEYNAME_F5#0="F5";
+VTKEYNAME_F6#0="F6";
+VTKEYNAME_F7#0="F7";
+VTKEYNAME_F8#0="F8";
+VTKEYNAME_F9#0="F9";
+VTKEYNAME_HOME#0="Home";
+VTKEYNAME_INSERT#0="Insert";
+VTKEYNAME_LEFT#0="Left";
+VTKEYNAME_PAGE_DOWN#0="PgDown";
+VTKEYNAME_PAGE_UP#0="PgUp";
+VTKEYNAME_PAUSE#0="Pause";
+VTKEYNAME_RIGHT#0="Right";
+VTKEYNAME_SPACE#0="Space";
+VTKEYNAME_TAB#0="Tab";
+VTKEYNAME_UP#0="Up";

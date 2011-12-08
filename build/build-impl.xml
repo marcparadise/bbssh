@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Ant build file for the BBSSH application
+ Thanks to Octorian @ LogicMail for providing this as a baseline
+
+ You will generally want to execute with one of the following targets:
+
+ * build - build all modules
+ * dist  - create signed ALX and OTA packages in build/dist/alx and build/dist/ota
+-->
+<project name="BBSSH" default="dist" basedir=".">
+
+    <!--
+    !!!!!!                                                             !!!!!!
+    !!!! IMPORTANT NOTE IF YOU WISH TO MAKE DISTRIBUTABLE BBSSH VERSIONS !!!!
+    !!!!!!                                                             !!!!!!
+
+    The file sig.password is a file that YOU must create.
+
+    It must have the password for yoru BlackBerry signing key as follows:
+       sigtool.password=My Blackberry Signature Password
+    It must also have a valid subversion username and password for performing
+    commits and checkouts;
+       svn.username=your username
+       svn.password=your password
+
+
+    You MUST create this file and add the above property to it. The password
+    MUST be the password for your own BB code signing keys. Signing authority
+    for BB APIs is $20 (you can find more info at the RIM site). You will also
+    need signing authority for the BB crypto APIs, but you can request that for free
+    once you have the basic BB API signature purchased.
+
+    Also note that in order to sign automatically, you must ensure that
+    the signing keys are registered with the JDE version you specify
+    in build.properties as jde.home
+
+
+    This password file is not maintained in SVN for obvious reasons.
+    -->
+
+    <property file="sig.password"/>
+
+    <!-- Build properties including version and base path.  Placed second as
+         contents of sig.password can override it -->
+    <property file="build.properties"/>
+
+
+    <!-- Now our derived and relative paths...
+    Note that you can override these in your personal sig.password file -
+    if the override version is present, then it won't replaced here. -->
+    <property name="dir.dist.ota" value="${dir.dist}/ota/${platform}" />
+    <property name="dir.dist.alx" value="${dir.dist}/alx/${platform}" />
+    <property name="dir.dist.doc" value="${dir.dist}/doc/${platform}" />
+
+
+    <!-- Task definitions -->
+    <typedef resource="bb-ant-defs.xml" classpath="lib/bb-ant-tools.jar" />
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties">
+        <classpath>
+            <pathelement location="${dir.base.build}/lib/ant-contrib-1.0b3.jar"/>
+        </classpath>
+    </taskdef>
+
+    <!-- Targets  -->
+    <target name="setup-props">
+        <!-- set version number to include the revision number too -->
+        <property name="version" value="${module.version}.${build.number}" />
+        <echo message=" version: ${version}" />
+    </target>
+    <target name="init" depends="setup-props">
+        <mkdir dir="${dir.base.build}/out"/>
+        <mkdir dir="${dir.dist}"/>
+        <mkdir dir="${dir.dist.alx}"/>
+        <mkdir dir="${dir.dist.ota}"/>
+    </target>
+
+    <target name="write-version" depends="setup-props">
+        <mkdir dir="${dir.dist.versionstamp}"/>
+        <echo message="${version}" file="${dir.dist.versionstamp}/version.txt"/>
+        <echo message="Stamping ${dir.dist.versionstamp}/version.txt: ${version}"/>
+  </target>
+
+
+
+    <!-- Prepare the distribution -->
+    <target name="dist" depends="clean,init,dist-alx,dist-ota">
+        <zip destfile="${dir.base.build}/out/${module.name}-${platform}-alx-${version}.zip">
+            <fileset dir="${dir.dist.alx}" />
+        </zip>
+        <zip destfile="${dir.base.build}/out/${module.name}-${platform}-ota-${version}.zip">
+            <fileset dir="${dir.dist.ota}" />
+        </zip>
+        <echo message="${version}" file="${dir.dist}/../version.txt"/>
+    </target>
+
+    <!-- Remove distribution files.  -->
+    <target name="clean">
+        <delete dir="${dir.dist}"/>
+        <delete dir="${dir.dist.alx}"/>
+        <delete dir="${dir.dist.ota}"/>
+    </target>
+
+    <target name="build-bbssh-resources">
+         <if>
+            <equals arg1="${truetype}" arg2="true" />
+            <then>
+                <rapc output="BBSSH_Resources" destdir="${dir.dist}"  >
+                    <jdp type="library" version="${version}"
+                         title="BBSSH_Resources"
+                         vendor="${module.vendor}"/>
+                    <src>
+                        <fileset dir="${dir.base}/BBSSH_Resources/res">
+                            <include name="**/*.java"/>
+                            <include name="**/*.rrc"/>
+                            <include name="**/*.rrh"/>
+                            <include name="**/*.png"/>
+                            <include name="**/*.idx"/>
+                            <include name="**/*.ttf"/>
+                        </fileset>
+                    </src>
+                </rapc>
+             </then>
+            <else>
+                <rapc output="BBSSH_Resources" destdir="${dir.dist}"  >
+                    <jdp type="library" version="${version}"
+                         title="BBSSH_Resources"
+                         vendor="${module.vendor}"/>
+                    <src>
+                        <fileset dir="${dir.base}/BBSSH_Resources/res">
+                            <include name="**/*.java"/>
+                            <include name="**/*.rrc"/>
+                            <include name="**/*.rrh"/>
+                            <include name="**/*.png"/>
+                            <include name="**/*.idx"/>
+                        </fileset>
+                    </src>
+                </rapc>
+            </else>
+
+        </if>
+    </target>
+
+    <!-- TODO -t his must be turned into a template task -->
+    <target  name="build-bbssh-common" depends="build-bbssh-resources">
+        <rapc output="BBSSH_Common"  destdir="${dir.dist}" >
+            <jdp type="library"
+                 version="${version}"
+                title="BBSSH Common Components (OS 4.5)"
+                 vendor="${module.vendor}" >
+            </jdp>
+            <import>
+                <fileset dir="${dir.dist}" includes="BBSSH_Resources.jar"/>
+            </import>
+            <src>
+                <fileset dir="${dir.base}/BBSSH_Common/src">
+                    <include name="**/*.java"/>
+                </fileset>
+                <fileset dir="${dir.base}/BBSSH_Common/keys" includes="NOET.key" />
+            </src>
+        </rapc>
+    </target>
+    <target  name="build-bbssh-common-46" depends="build-bbssh-common">
+        <rapc output="BBSSH_Common_46"  destdir="${dir.dist}" >
+            <jdp type="library"
+                 version="${version}"
+                title="BBSSH Common Components (OS 4.6)"
+                 vendor="${module.vendor}" >
+            </jdp>
+            <import>
+                <fileset dir="${dir.dist}" includes="BBSSH_Common*.jar"/>
+                <fileset dir="${dir.dist}" includes="BBSSH_Resources.jar"/>
+            </import>
+            <src>
+                <fileset dir="${dir.base}/BBSSH_Common_46/src">
+                    <include name="**/*.java"/>
+                </fileset>
+            </src>
+        </rapc>
+    </target>
+    <target  name="build-bbssh-common-47" depends="build-bbssh-common-46">
+        <rapc output="BBSSH_Common_47"  destdir="${dir.dist}" >
+            <jdp type="library"
+                 version="${version}"
+                title="BBSSH Common Components (OS 4.7)"
+                 vendor="${module.vendor}" >
+            </jdp>
+            <import>
+                <fileset dir="${dir.dist}" includes="BBSSH_Common*.jar"/>
+                <fileset dir="${dir.dist}" includes="BBSSH_Resources.jar"/>
+            </import>
+            <src>
+                <fileset dir="${dir.base}/BBSSH_Common_47/src">
+                    <include name="**/*.java"/>
+                </fileset>
+            </src>
+        </rapc>
+    </target>
+    <target  name="build-bbssh-common-50" depends="build-bbssh-common-47">
+        <rapc output="BBSSH_Common_50"  destdir="${dir.dist}" >
+            <jdp type="library"
+                 version="${version}"
+                title="BBSSH Common Components (OS 5.0+)"
+                 vendor="${module.vendor}" >
+            </jdp>
+            <import>
+                <fileset dir="${dir.dist}" includes="BBSSH_Common*.jar"/>
+                <fileset dir="${dir.dist}" includes="BBSSH_Resources.jar"/>
+            </import>
+            <src>
+                <fileset dir="${dir.base}/BBSSH_Common_50/src">
+                    <include name="**/*.java"/>
+                </fileset>
+            </src>
+        </rapc>
+    </target>
+    <target  name="build-bbssh-common-60" depends="build-bbssh-common-50">
+        <rapc output="BBSSH_Common_60"  destdir="${dir.dist}" >
+            <jdp type="library"
+                 version="${version}"
+                title="BBSSH Common Components (OS 6.0+)"
+                 vendor="${module.vendor}" >
+            </jdp>
+            <import>
+                <fileset dir="${dir.dist}" includes="BBSSH_Common*.jar"/>
+                <fileset dir="${dir.dist}" includes="BBSSH_Resources.jar"/>
+            </import>
+            <src>
+                <fileset dir="${dir.base}/BBSSH_Common_60/src">
+                    <include name="**/*.java"/>
+                </fileset>
+            </src>
+        </rapc>
+    </target>
+   <target  name="build-bbssh-common-70" depends="build-bbssh-common-60">
+        <rapc output="BBSSH_Common_70"  destdir="${dir.dist}" >
+            <jdp type="library"
+                 version="${version}"
+                title="BBSSH Common Components (OS 7.0+)"
+                 vendor="${module.vendor}" >
+            </jdp>
+            <import>
+                <fileset dir="${dir.dist}" includes="BBSSH_Common*.jar"/>
+                <fileset dir="${dir.dist}" includes="BBSSH_Resources.jar"/>
+            </import>
+            <src>
+                <fileset dir="${dir.base}/BBSSH_Common_70/src">
+                    <include name="**/*.java"/>
+                </fileset>
+            </src>
+        </rapc>
+    </target>
+      <!--
+    nameresourcebundle
+    nameresourceid
+    -->
+    <target  name="build-bbssh"  >
+        <if>
+            <equals arg1="${platform}" arg2="7.0.0" />
+            <then>
+                <property name="truetype" value="true"/>
+                <antcall target="build-bbssh-common-70" />
+            </then>
+            <elseif>
+                <equals arg1="${platform}" arg2="6.0.0" />
+                <then>
+                    <property name="truetype" value="true"/>
+                    <antcall target="build-bbssh-common-60" />
+                </then>
+            </elseif>
+            <elseif>
+                <equals arg1="${platform}" arg2="5.0.0" />
+                <then>
+                    <property name="truetype" value="true"/>
+                    <antcall target="build-bbssh-common-50" />
+                </then>
+            </elseif>
+            <elseif>
+                <equals arg1="${platform}" arg2="4.7.0" />
+                <then>
+                    <property name="truetype" value="false"/>
+                    <antcall target="build-bbssh-common-47" />
+                </then>
+            </elseif>
+            <elseif>
+                <equals arg1="${platform}" arg2="4.6.0" />
+                <then>
+                    <property name="truetype" value="false"/>
+                    <antcall target="build-bbssh-common-46" />
+                </then>
+            </elseif>
+            <elseif>
+                <equals arg1="${platform}" arg2="4.5.0" />
+                <then>
+                    <property name="truetype" value="false"/>
+                    <antcall target="build-bbssh-common" />
+                </then>
+            </elseif>
+            <else>
+            </else>
+        </if>
+       <copy file="${dir.base}/BBSSH/res/large.png" todir="${dir.dist}" />
+        <rapc output="BBSSH" destdir="${dir.dist}" >
+            <jdp title="BBSSH" vendor="${module.vendor}" description="BBSSH is an SSH and Telnet client designed for your BlackBerry device."
+                 arguments="${buildmode}"
+                 version="${version}" type="cldc" icon="large.png">
+                <entry title="BBSSH Autostart" arguments="init" runonstartup="true" startuptier="7" systemmodule="true"
+                    description="This runs briefly at startup to register BBSSH as a provider of events, notifications, and desktop data sync (for backups)."/>
+            </jdp>
+            <import >
+                <fileset dir="${dir.dist}" includes="BBSSH_Resources.jar"/>
+                <fileset dir="${dir.dist}" includes="BBSSH_Common*.jar"/>
+            </import>
+            <src>
+                <fileset dir="${dir.base}/BBSSH/src" includes="**/*.java" />
+                <fileset dir="${dir.base}/BBSSH/res" includes="**/*.png" />
+            </src>
+        </rapc>
+    </target>
+
+    <!-- Build the application -->
+    <target name="build" depends="init,build-bbssh">
+    </target>
+
+    <!-- Sign the application -->
+    <target name="sign" depends="build" if="sigtool.password">
+        <sigtool password="${sigtool.password}" forceclose="true">
+            <fileset dir="${dir.dist}" includes="*.cod" />
+        </sigtool>
+    </target>
+
+    <!-- Build the desktop loader distribution -->
+    <target name="dist-alx" depends="init,build,sign">
+        <mkdir dir="${dir.dist.alx}" />
+        <alx destdir="${dir.dist.alx}" filename="${module.name}.alx">
+            <application
+                id="${module.name}"
+                name="${module.title}"
+                description="${module.description}"
+                vendor="${module.vendor}"
+                version="${version}"
+                copyright="${module.copyright}">
+                <codset>
+                    <fileset dir="${dir.dist}" includes="*.cod" />
+                </codset>
+            </application>
+        </alx>
+    </target>
+
+    <target name="dist-ota" depends="init,build,sign">
+        <copy-ota-files src="${dir.dist}" dest="${dir.dist.ota}"/>
+    </target>
+
+    <macrodef name="copy-ota-files">
+        <attribute name="src"/>
+        <attribute name="dest"/>
+        <sequential>
+            <mkdir dir="@{dest}"/>
+            <delete failonerror="true">
+                <fileset dir="@{dest}" includes="*.*"/>
+            </delete>
+            <jadtool input="@{src}/${module.name}.jad" destdir="@{dest}">
+                <fileset dir="@{src}" includes="*.cod" />
+                <override key="MIDlet-Version" value="${version}" />
+            </jadtool>
+            <replaceregexp file="@{dest}/${module.name}.jad" match="MIDlet-Jar-URL(.*)\n" replace="" />
+            <replaceregexp file="@{dest}/${module.name}.jad" match="MIDlet-Jar-Size(.*)\n" replace="" />
+        </sequential>
+    </macrodef>
+
+</project>
+

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="30"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.47 r22583"
+   version="1.0"
+   sodipodi:docname="icon_console.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="D:\proj\cliparts\released\icon_console.png"
+   inkscape:export-xdpi="45"
+   inkscape:export-ydpi="45"
+   sodipodi:modified="TRUE">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3614">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3616" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3618" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 15 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="30 : 15 : 1"
+       inkscape:persp3d-origin="15 : 10 : 1"
+       id="perspective36" />
+    <linearGradient
+       id="linearGradient3223">
+      <stop
+         style="stop-color:#2e3436;stop-opacity:1;"
+         offset="0"
+         id="stop3225" />
+      <stop
+         style="stop-color:#7b8a8e;stop-opacity:1;"
+         offset="1"
+         id="stop3227" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3212">
+      <stop
+         style="stop-color:#eeeeec;stop-opacity:1;"
+         offset="0"
+         id="stop3214" />
+      <stop
+         style="stop-color:#8a8a7c;stop-opacity:1;"
+         offset="1"
+         id="stop3217" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3204">
+      <stop
+         style="stop-color:#b0b1ae;stop-opacity:1;"
+         offset="0"
+         id="stop3206" />
+      <stop
+         style="stop-color:#5f5f5d;stop-opacity:1;"
+         offset="1"
+         id="stop3208" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3223"
+       id="linearGradient2409"
+       gradientUnits="userSpaceOnUse"
+       x1="6"
+       y1="6"
+       x2="24"
+       y2="21" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3212"
+       id="linearGradient2412"
+       gradientUnits="userSpaceOnUse"
+       x1="2"
+       y1="2"
+       x2="28"
+       y2="25" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3204"
+       id="linearGradient2415"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.9333334,0,0,0.925926,1,1)"
+       x1="0"
+       y1="0"
+       x2="30"
+       y2="27" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3212"
+       id="linearGradient2422"
+       gradientUnits="userSpaceOnUse"
+       x1="2"
+       y1="2"
+       x2="28"
+       y2="25"
+       gradientTransform="translate(1,-96)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3204"
+       id="linearGradient2425"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.9333334,0,0,0.925926,2,-95)"
+       x1="0"
+       y1="0"
+       x2="30"
+       y2="27" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3614"
+       id="linearGradient3620"
+       x1="5"
+       y1="13.5"
+       x2="25"
+       y2="13.5"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(1,-96)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="15"
+     inkscape:cy="15"
+     inkscape:document-units="px"
+     inkscape:current-layer="g2427"
+     width="30px"
+     height="30px"
+     showgrid="false"
+     gridtolerance="10000"
+     inkscape:grid-points="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="885"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     showguides="true"
+     inkscape:snap-global="true"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2395" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>icon_console</dc:title>
+        <dc:date>2008-05-12</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Jean-Victor Balin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:language>fr-FR</dc:language>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>console</rdf:li>
+            <rdf:li>log</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>jean.victor.balin@gmail.com</dc:description>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#427bc3;fill-opacity:1;stroke:none"
+       id="rect3465"
+       width="6"
+       height="0"
+       x="16"
+       y="12.5"
+       ry="0" />
+    <g
+       id="g2427">
+      <path
+         id="rect2420"
+         d="m 5.9838648,-95 20.0322702,0 C 28.223196,-95 30,-93.223196 30,-91.016135 l 0,17.03227 C 30,-71.776804 28.223196,-70 26.016135,-70 L 5.9838648,-70 C 3.7768037,-70 2,-71.776804 2,-73.983865 l 0,-17.03227 C 2,-93.223196 3.7768037,-95 5.9838648,-95 z"
+         style="fill:url(#linearGradient2425);fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\work\Projects\bbssh\BBSSH_Resources\res\small.png"
+         inkscape:export-xdpi="51.43"
+         inkscape:export-ydpi="51.43" />
+      <path
+         id="rect2422"
+         d="m 5.9440877,-94 20.1118243,0 C 27.686937,-94 29,-92.686937 29,-91.055912 l 0,17.111824 C 29,-72.313063 27.686937,-71 26.055912,-71 L 5.9440877,-71 C 4.3130631,-71 3,-72.313063 3,-73.944088 L 3,-91.055912 C 3,-92.686937 4.3130631,-94 5.9440877,-94 z"
+         style="fill:url(#linearGradient2422);fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\work\Projects\bbssh\BBSSH_Resources\res\small.png"
+         inkscape:export-xdpi="51.43"
+         inkscape:export-ydpi="51.43" />
+      <path
+         id="rect2424"
+         d="m 6,-91 20,0 0,17 -20,0 0,-17 z"
+         style="fill:url(#linearGradient3620);fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\work\Projects\bbssh\BBSSH_Resources\res\small.png"
+         inkscape:export-xdpi="51.43"
+         inkscape:export-ydpi="51.43" />
+      <path
+         id="rect3231"
+         d="m 14,-70 4,0 0,2 -4,0 0,-2 z"
+         style="fill:#555753;fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\work\Projects\bbssh\BBSSH_Resources\res\small.png"
+         inkscape:export-xdpi="51.43"
+         inkscape:export-ydpi="51.43" />
+      <path
+         id="rect3233"
+         d="m 6.5,-68 19,0 c 0.277,0 0.5,0.223 0.5,0.5 0,0.277 -0.223,0.5 -0.5,0.5 l -19,0 C 6.223,-67 6,-67.223 6,-67.5 6,-67.777 6.223,-68 6.5,-68 z"
+         style="fill:#888a85;fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\work\Projects\bbssh\BBSSH_Resources\res\small.png"
+         inkscape:export-xdpi="51.43"
+         inkscape:export-ydpi="51.43" />
+      <path
+         id="rect3245"
+         d="m 5,-92 0,19 22,0 0,-19 -22,0 z m 1,1 20,0 0,17 -20,0 0,-17 z"
+         style="fill:#555753;fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\work\Projects\bbssh\BBSSH_Resources\res\small.png"
+         inkscape:export-xdpi="51.43"
+         inkscape:export-ydpi="51.43" />
+      <g
+         transform="matrix(0.868055,0,0,0.868055,3.0708439,-93.928855)"
+         id="g2431"
+         inkscape:export-filename="D:\work\Projects\bbssh\BBSSH_Resources\res\small.png"
+         inkscape:export-xdpi="51.43"
+         inkscape:export-ydpi="51.43">
+        <path
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#888a85;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           d="M 6.53125,7.125 C 6.2914071,7.1692638 6.1192292,7.381175 6.125,7.625 l 0,2.125 c -0.00315,0.2059435 0.1211885,0.392444 0.3125,0.46875 l 6,2.34375 -6,2.34375 C 6.2461885,14.982556 6.1218547,15.169056 6.125,15.375 l 0,2.125 c -0.00355,0.16786 0.077969,0.326145 0.216691,0.420728 0.1387218,0.09458 0.3158479,0.11265 0.470809,0.04802 l 9.5625,-3.9375 c 0.191311,-0.07631 0.315645,-0.262806 0.3125,-0.46875 l 0,-2 c 0.0031,-0.205944 -0.121189,-0.392444 -0.3125,-0.46875 L 6.8125,7.15625 C 6.7237662,7.1187716 6.6260465,7.1079139 6.53125,7.125 l 0,0 z"
+           id="path2419" />
+        <path
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#00ff00;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           d="m 6.6217533,9.7397481 0,-2.1279014 9.5803237,3.9408733 0,2.008737 -9.5803237,3.940873 0,-2.127901 7.2113977,-2.808828 -7.2113977,-2.8258529 z"
+           id="path3281" />
+      </g>
+      <g
+         transform="matrix(0.8773124,0,0,0.8773124,3.545728,-93.739584)"
+         id="g2438"
+         style="fill:#00ff00;stroke:none"
+         inkscape:export-filename="D:\work\Projects\bbssh\BBSSH_Resources\res\small.png"
+         inkscape:export-xdpi="51.43"
+         inkscape:export-ydpi="51.43">
+        <path
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#00ff00;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           d="m 16.09375,17.71875 c -0.189754,0.06027 -0.317031,0.238456 -0.3125,0.4375 l 0,1.25 c 0.0057,0.239218 0.198282,0.431788 0.4375,0.4375 l 6.65625,0 c 0.239218,-0.0057 0.431788,-0.198282 0.4375,-0.4375 l 0,-1.25 c -0.0057,-0.239218 -0.198282,-0.431788 -0.4375,-0.4375 l -6.65625,0 c -0.04146,-0.0058 -0.08354,-0.0058 -0.125,0 l 0,0 z"
+           id="path2424" />
+        <path
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#00ff00;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           d="m 22.881214,18.156712 0,1.236778 -6.665585,0 0,-1.236778 6.665585,0 z"
+           id="text3274" />
+      </g>
+    </g>
+  </g>
+</svg>

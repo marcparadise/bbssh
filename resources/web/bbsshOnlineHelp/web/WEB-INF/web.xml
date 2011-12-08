@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>HelpProvider</servlet-name>
+		<servlet-class>org.bbssh.onlinehelp.servlets.HelpProvider</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HelpProvider</servlet-name>
+		<url-pattern>/get</url-pattern>
+	</servlet-mapping>
+	<session-config>
+		<session-timeout>
+			30
+		</session-timeout>
+	</session-config>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<mime-mapping>
+		<extension>xhtml</extension>
+		<mime-type>application/vnd.wap.xhtml+xml</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>wml</extension>
+		<mime-type>text/vnd.wap.wml</mime-type>
+	</mime-mapping>
+
+	<mime-mapping>
+		<extension>wmls</extension>
+		<mime-type>text/vnd.wap.wmlscript</mime-type>
+	</mime-mapping>
+
+	<mime-mapping>
+		<extension>wbmp</extension>
+		<mime-type>image/vnd.wap.wbmp</mime-type>
+	</mime-mapping>
+</web-app>

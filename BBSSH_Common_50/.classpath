@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/.svn/*|*.svn-base" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/net.rim.ejde.BlackBerryVMInstallType/BlackBerry JRE 5.0.0"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BBSSH_Common"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BBSSH_Common_46"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BBSSH_Common_47"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BBSSH_Resources"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

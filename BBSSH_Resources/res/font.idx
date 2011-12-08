@@ -1,0 +1,18 @@
+# Number of bitmap font records
+5
+# Font file base name | display name | dimensions... (10 total)
+Anon|Anonymous|6x9|8x11|9x12|9x13|10x15|11x16|12x17|13x19|14x20|14x21
+BVSM|Bitstream Vera Sans Mono|6x11|7x13|8x14|8x16|9x18|10x19|11x20|11x23|12x24|13x25
+CourierNew|Courier New|6x11|7x13|8x14|8x15|9x17|10x19|11x20|11x22|12x23|13x24
+LucidaConsole|Lucida Console|6x9|7x11|8x12|8x13|9x15|10x16|11x17|11x19|12x20|13x21
+Legacy|Legacy Font|3x6|4x6|4x7|5x9|8x13
+# Number of truetype font records. Note that TTF files must be less than 60kb in BB OS 5.0
+7
+# Names - this should match the file name, but without extension.  
+CenturySchoolbook
+CustomMono
+FixedSys
+Pro
+Square
+TI92
+VeraMono
