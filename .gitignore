@@ -1,0 +1,6 @@
+bin/
+.preprocessed/
+.svn/
+deliverables/
+.metadata/
+.locale_interfaces/
