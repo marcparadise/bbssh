@@ -3,6 +3,8 @@
 	<name>BBSSH_Common_46</name>
 	<comment></comment>
 	<projects>
+		<project>BBSSH_Common</project>
+		<project>BBSSH_Resources</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

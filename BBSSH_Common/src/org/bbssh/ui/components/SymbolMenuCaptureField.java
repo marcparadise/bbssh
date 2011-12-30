@@ -1,7 +1,5 @@
 package org.bbssh.ui.components;
 
-import org.bbssh.util.Logger;
-
 import net.rim.device.api.ui.Field;
 import net.rim.device.api.ui.FieldChangeListener;
 import net.rim.device.api.ui.MenuItem;

@@ -250,17 +250,42 @@
             </src>
         </rapc>
     </target>
+   <target  name="build-bbssh-common-71" depends="build-bbssh-common-70">
+        <rapc output="BBSSH_Common_71"  destdir="${dir.dist}" >
+            <jdp type="library"
+                 version="${version}"
+                title="BBSSH Common Components (OS 7.1+)"
+                 vendor="${module.vendor}" >
+            </jdp>
+            <import>
+                <fileset dir="${dir.dist}" includes="BBSSH_Common*.jar"/>
+                <fileset dir="${dir.dist}" includes="BBSSH_Resources.jar"/>
+            </import>
+            <src>
+                <fileset dir="${dir.base}/BBSSH_Common_71/src">
+                    <include name="**/*.java"/>
+                </fileset>
+            </src>
+        </rapc>
+    </target>
       <!--
     nameresourcebundle
     nameresourceid
     -->
     <target  name="build-bbssh"  >
         <if>
-            <equals arg1="${platform}" arg2="7.0.0" />
+            <equals arg1="${platform}" arg2="7.1.0" />
             <then>
                 <property name="truetype" value="true"/>
-                <antcall target="build-bbssh-common-70" />
+                <antcall target="build-bbssh-common-71" />
             </then>
+            <elseif>
+                <equals arg1="${platform}" arg2="7.0.0" />
+                <then>
+                    <property name="truetype" value="true"/>
+                    <antcall target="build-bbssh-common-70" />
+                </then>
+            </elseif>
             <elseif>
                 <equals arg1="${platform}" arg2="6.0.0" />
                 <then>
@@ -305,7 +330,7 @@
                  arguments="${buildmode}"
                  version="${version}" type="cldc" icon="large.png">
                 <entry title="BBSSH Autostart" arguments="init" runonstartup="true" startuptier="7" systemmodule="true"
-                    description="This runs briefly at startup to register BBSSH as a provider of events, notifications, and desktop data sync (for backups)."/>
+                    description="This runs briefly at startup to register BBSSH as a provider of events, notifications, and desktop data sync (for backups).  It does not continue running."/>
             </jdp>
             <import >
                 <fileset dir="${dir.dist}" includes="BBSSH_Resources.jar"/>

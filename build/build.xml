@@ -15,13 +15,20 @@
     <property file="build.num" />
     <target name="dist" depends="deploy">
         <property file="sig.password"/>
+     <!--
         <svn username="${svn.username}" password="${svn.password}" javahl="false" svnkit="false">
             <copy srcUrl="http://svn.bbssh.org/trunk/" destUrl="http://svn.bbssh.org/tags/b${build.number}" message="Automated build tag for build ${build.number}" />
         </svn>
-
+     -->
     </target>
 
     <target name="deploy">
+        <echo message="Building platform 7.1.0" />
+        <ant antfile="build-impl.xml" target="dist">
+            <property name="platform" value="7.1.0" />
+            <property file="sig.password"/>
+            <property file="build.properties"/>
+        </ant>
         <echo message="Building platform 7.0.0" />
         <ant antfile="build-impl.xml" target="dist">
             <property name="platform" value="7.0.0" />

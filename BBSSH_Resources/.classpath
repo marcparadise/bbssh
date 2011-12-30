@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="**/.svn/" kind="src" path="res"/>
-	<classpathentry excluding="*.svn-base|.svn/*" kind="src" path=".locale_interfaces"/>
+	<classpathentry kind="src" path="res"/>
+	<classpathentry kind="src" path=".locale_interfaces"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/net.rim.ejde.BlackBerryVMInstallType/BlackBerry JRE 4.5.0"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
